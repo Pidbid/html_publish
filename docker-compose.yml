@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: my_static_site
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped

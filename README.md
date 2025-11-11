@@ -1,2 +1,2 @@
 # html_publish
-html_publish docker image
+一个非常简单的使用 nginx:aphine 部署静态网站的镜像
